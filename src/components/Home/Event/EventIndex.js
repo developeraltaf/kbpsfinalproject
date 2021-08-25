@@ -46,8 +46,8 @@ const EventIndex = () => {
           <div className="content_desc">
             <h4 className="content_title"><a href="#">Nullam id varius nunc id varius nunc</a></h4>
             <ul className="list_none content_meta">
-              <li><i className="ti-user" /> <a href="#" className="text_default">John Wood</a></li>
-              <li><i className="ti-location-pin" /><span className="text_default">New York City</span></li>
+              <li><i className="ti-user" /> <a href="#" className="text_default">KHALID</a></li>
+              <li><i className="ti-location-pin" /><span className="text_default">INDIA</span></li>
             </ul>
             <p>If you are going to use a passage of Lorem Ipsum you need to be sure anything embarrassing hidden in the middle of text.</p>
           </div>
@@ -65,8 +65,8 @@ const EventIndex = () => {
           <div className="content_desc">
             <h4 className="content_title"><a href="#">Nullam id varius nunc id varius nunc</a></h4>
             <ul className="list_none content_meta">
-              <li><i className="ti-user" /> <a href="#" className="text_default">John Wood</a></li>
-              <li><i className="ti-location-pin" /><span className="text_default">New York City</span></li>
+              <li><i className="ti-user" /> <a href="#" className="text_default">KHALID</a></li>
+              <li><i className="ti-location-pin" /><span className="text_default">INDIA</span></li>
             </ul>
             <p>If you are going to use a passage of Lorem Ipsum you need to be sure anything embarrassing hidden in the middle of text.</p>
           </div>
@@ -84,8 +84,8 @@ const EventIndex = () => {
           <div className="content_desc">
             <h4 className="content_title"><a href="#">Nullam id varius nunc id varius nunc</a></h4>
             <ul className="list_none content_meta">
-              <li><i className="ti-user" /> <a href="#" className="text_default">John Wood</a></li>
-              <li><i className="ti-location-pin" /><span className="text_default">New York City</span></li>
+              <li><i className="ti-user" /> <a href="#" className="text_default">KHALID</a></li>
+              <li><i className="ti-location-pin" /><span className="text_default">INDIA</span></li>
             </ul>
             <p>If you are going to use a passage of Lorem Ipsum you need to be sure anything embarrassing hidden in the middle of text.</p>
           </div>
@@ -103,8 +103,8 @@ const EventIndex = () => {
           <div className="content_desc">
             <h4 className="content_title"><a href="#">Nullam id varius nunc id varius nunc</a></h4>
             <ul className="list_none content_meta">
-              <li><i className="ti-user" /> <a href="#" className="text_default">John Wood</a></li>
-              <li><i className="ti-location-pin" /><span className="text_default">New York City</span></li>
+              <li><i className="ti-user" /> <a href="#" className="text_default">KHALID</a></li>
+              <li><i className="ti-location-pin" /><span className="text_default">INDIA</span></li>
             </ul>
             <p>If you are going to use a passage of Lorem Ipsum you need to be sure anything embarrassing hidden in the middle of text.</p>
           </div>
@@ -122,8 +122,8 @@ const EventIndex = () => {
           <div className="content_desc">
             <h4 className="content_title"><a href="#">Nullam id varius nunc id varius nunc</a></h4>
             <ul className="list_none content_meta">
-              <li><i className="ti-user" /> <a href="#" className="text_default">John Wood</a></li>
-              <li><i className="ti-location-pin" /><span className="text_default">New York City</span></li>
+              <li><i className="ti-user" /> <a href="#" className="text_default">KHALID</a></li>
+              <li><i className="ti-location-pin" /><span className="text_default">INDIA</span></li>
             </ul>
             <p>If you are going to use a passage of Lorem Ipsum you need to be sure anything embarrassing hidden in the middle of text.</p>
           </div>
@@ -141,8 +141,8 @@ const EventIndex = () => {
           <div className="content_desc">
             <h4 className="content_title"><a href="#">Nullam id varius nunc id varius nunc</a></h4>
             <ul className="list_none content_meta">
-              <li><i className="ti-user" /> <a href="#" className="text_default">John Wood</a></li>
-              <li><i className="ti-location-pin" /><span className="text_default">New York City</span></li>
+              <li><i className="ti-user" /> <a href="#" className="text_default">KHALID</a></li>
+              <li><i className="ti-location-pin" /><span className="text_default">INDIA</span></li>
             </ul>
             <p>If you are going to use a passage of Lorem Ipsum you need to be sure anything embarrassing hidden in the middle of text.</p>
           </div>
