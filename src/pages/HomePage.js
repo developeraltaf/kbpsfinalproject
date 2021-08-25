@@ -52,7 +52,7 @@ const HomePage = () => {
       <Text />
       <AboutUs />
       <OurFaculty />
-      <VideoCampus />
+      {/* <VideoCampus /> */}
       <UpcomingEvents />
         <NoOfStudents />
         <OurTeachers />

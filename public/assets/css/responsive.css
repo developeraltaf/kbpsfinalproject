@@ -212,10 +212,7 @@ section.small_pb,
 	max-height: 80vh;
 	overflow-y: auto;
 }
-.header_wrap .navbar {
-	display: block;
-	position: static;
-}
+
 .header_wrap .navbar-expand-lg .navbar-nav.attr-nav {
 	display: block;
 	float: right;
