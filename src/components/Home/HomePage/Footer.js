@@ -18,12 +18,7 @@ const Footer = () => {
                                 <p>If you are going to use a passage of embarrassing hidden in the middle of text</p>
                             </div>
                         </div>
-                        <div className="col-md-4">
-                            <div className="text-md-right">
-                                <Link to="#" className="btn btn-outline-white rounded-0">Get Started</Link>
-                            </div>
-                            <div className="medium_divider d-block d-md-none" />
-                        </div>
+                        
                     </div>
                 </div>
             </section>
@@ -54,12 +49,12 @@ const Footer = () => {
                             <div className="col-lg-2 col-sm-4 mb-4 mb-lg-0">
                                 <h6 className="widget_title">Useful Links</h6>
                                 <ul className="list_none widget_links links_style2">
-                                    <li><Link to="#">Join Us</Link></li>
-                                    <li><Link to="#">About Us</Link></li>
-                                    <li><Link to="#">Features</Link></li>
-                                    <li><Link to="#">Feedback</Link></li>
-                                    <li><Link to="#">Support center</Link></li>
-                                    <li><Link to="#">Contact Us</Link></li>
+                                    <li><Link style={{textDecoration: 'none'}} to="#">Join Us</Link></li>
+                                    <li><Link style={{textDecoration: 'none'}} to="#">About Us</Link></li>
+                                    <li><Link style={{textDecoration: 'none'}} to="#">Features</Link></li>
+                                    <li><Link style={{textDecoration: 'none'}} to="#">Feedback</Link></li>
+                                    <li><Link style={{textDecoration: 'none'}} to="#">Support center</Link></li>
+                                    <li><Link style={{textDecoration: 'none'}} to="#">Contact Us</Link></li>
                                 </ul>
                             </div>
                             <div className="col-lg-3 col-md-6 mb-4 mb-lg-0">

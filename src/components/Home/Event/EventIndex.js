@@ -8,25 +8,18 @@ const EventIndex = () => {
 <NoticeHeader />
             <Header />
 
-  <section className="page-title-light breadcrumb_section parallax_bg overlay_bg_50" data-parallax-bg-image="assets/images/about_bg.jpg">
-  <div className="container">
-    <div className="row align-items-center">
-      <div className="col-sm-6">
-        <div className="page-title">
-          <h1>Event</h1>
+            <section  className="page-title-light breadcrumb_section parallax_bg overlay_bg_50" style={{backgroundImage:'url("https://images.pexels.com/photos/1400141/pexels-photo-1400141.jpeg")', backgroundRepeat:'no-repeat',backgroundPosition: 'center',backgroundSize: 'cover',height:'80px', paddingTop:'18px'}}>
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-sm-12">
+              <div className="page-title">
+                <h1 style={{textAlign:'center',color:'white', fontWeight:'bold',fontsize:'40px'}}>Event</h1>
+              </div>
+            </div>
+            
+          </div>
         </div>
-      </div>
-      <div className="col-sm-6">
-        <nav aria-label="breadcrumb">
-          <ol className="breadcrumb justify-content-sm-end">
-            <li className="breadcrumb-item"><a href="#">Home</a></li>
-            <li className="breadcrumb-item active" aria-current="page">Event</li>
-          </ol>
-        </nav>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
 
 
 

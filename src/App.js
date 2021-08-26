@@ -20,6 +20,8 @@ import ProjectAdmin from "./pages/ProjectAdmin";
 import NotFound from "./pages/NotFound";
 import EventIndex from "./components/Home/Event/EventIndex";
 import FacilityIndex from "./components/Home/Facility/FacilityIndex";
+import principal from "./components/Home/Principal/principal";
+import TeacherStaff from "./components/Home/Teacher/TeacherStaff";
 
 function App() {
   const [isLogged, setIsLogged] = useState(isLogin);
@@ -46,6 +48,9 @@ function App() {
           <Route path="/contact" exact component={IndexContact} />
           <Route path="/event" exact component={EventIndex} />
           <Route path="/facility" exact component={FacilityIndex} />
+          <Route path="/principal" exact component={principal} />
+          <Route path="/teacher" exact component={TeacherStaff} />
+
 
           <Route path="*" component={NotFound} />
         </Switch>

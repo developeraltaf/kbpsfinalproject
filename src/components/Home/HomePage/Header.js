@@ -109,7 +109,6 @@ const Header = () => {
                             <ul> 
                                 <li><NavLink  className="dropdown-item nav-link nav_item" to="/principal">Principal</NavLink></li> 
                                 <li><NavLink  className="dropdown-item nav-link nav_item" to="/headmasters">Headmasters</NavLink></li>
-                                <li><NavLink  className="dropdown-item nav-link nav_item" to="/tc">School Transfer<br /> Certificates</NavLink></li>
                                 <li><NavLink  className="dropdown-item nav-link nav_item" to="/teacher">Administrative Staff</NavLink></li>
                                 <li><NavLink  className="dropdown-item nav-link nav_item" to="/vacancies">Vacancies</NavLink></li>
                             </ul>
