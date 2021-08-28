@@ -38,7 +38,7 @@ export const SidebarData = [
   },
   {
     title: "About",
-    path: "/about",
+    path: "/adminabout",
     icon: <GoIcons.GoProject />,
     cName: "nav-text",
   },

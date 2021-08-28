@@ -43,7 +43,7 @@ function App() {
           <SecureRoute path="/experience" exact component={ExperienceAdmin} />
           <SecureRoute path="/project" exact component={ProjectAdmin} />
           <SecureRoute path="/skill" exact component={SkillAdmin} />
-          <SecureRoute path="/about" exact component={AboutAdmin} />
+          <SecureRoute path="/adminabout" exact component={AboutAdmin} />
 
           <SecureRoute path="/messages" exact component={MessageAdmin} />
           <Route path="/" exact component={HomePage} />
