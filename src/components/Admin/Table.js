@@ -24,7 +24,7 @@ function Table({
                 <img
                   src={domainName + data[prop]}
                   alt="project"
-                  style={{width:'80px',height:'80px'}}
+                  style={{ width: '80px', height: '80px' }}
                 />
               )}
               {!(
@@ -35,7 +35,7 @@ function Table({
             </td>
           );
         })}
-        
+
         <td>
           <button
             type="button"

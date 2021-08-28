@@ -14,6 +14,8 @@ import history from "./shared/history";
 import SecureRoute from "./shared/SecureRoute";
 import ExperienceAdmin from "./pages/ExperienceAdmin";
 import SkillAdmin from "./pages/SkillAdmin";
+import AboutAdmin from "./pages/AboutAdmin";
+
 import MessageAdmin from "./pages/MessageAdmin";
 import isLogin from "./shared/authorization";
 import ProjectAdmin from "./pages/ProjectAdmin";
@@ -41,6 +43,8 @@ function App() {
           <SecureRoute path="/experience" exact component={ExperienceAdmin} />
           <SecureRoute path="/project" exact component={ProjectAdmin} />
           <SecureRoute path="/skill" exact component={SkillAdmin} />
+          <SecureRoute path="/about" exact component={AboutAdmin} />
+
           <SecureRoute path="/messages" exact component={MessageAdmin} />
           <Route path="/" exact component={HomePage} />
           <Route path="/gallery" exact component={IndexGallery} />

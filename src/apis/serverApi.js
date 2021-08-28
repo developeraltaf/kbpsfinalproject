@@ -1,9 +1,9 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://kbpsschooladmin.herokuapp.com",
+  baseURL: "https://school.umawedsbala.com",
 });
-
+//https://kbpsschooladmin.herokuapp.com
 export const setAuthorizationToken = (token) => {
   if (token) {
     axios.defaults.headers.common["Authorization"] = `Bearer ${token}`;
@@ -14,4 +14,4 @@ export const setAuthorizationToken = (token) => {
 
 export default api;
 
-export const domainName= "https://kbpsschooladmin.herokuapp.com/";
+export const domainName= "https://school.umawedsbala.com/";

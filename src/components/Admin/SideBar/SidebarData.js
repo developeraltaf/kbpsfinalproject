@@ -37,6 +37,12 @@ export const SidebarData = [
     cName: "nav-text",
   },
   {
+    title: "About",
+    path: "/about",
+    icon: <GoIcons.GoProject />,
+    cName: "nav-text",
+  },
+  {
     title: "Messages",
     path: "/messages",
     icon: <FaIcons.FaEnvelopeOpenText />,
