@@ -1,6 +1,5 @@
 import Marquee from 'react-marquee-master';
 import React from 'react'
-import { Link } from "react-router-dom";
 
 const OurFaculty = () => {
   const marqueeItems=['1 publishing and graphic design',

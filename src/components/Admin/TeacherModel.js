@@ -1,29 +1,30 @@
+
 import React, { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { useDispatch } from "react-redux";
-import { addSkill, updateSkill } from "../../actions/skillAction";
+import { addProject, updateProject } from "../../actions/teacherAction";
 
-const SkillModal = ({ id, header, skil, submitValue, colorButton }) => {
-  const {
-    register,
-    handleSubmit,
-    reset,
-    setValue,
-  } = useForm();
+const AboutModel = ({ id, header, proj, submitValue, colorButton }) => {
+  const { register, handleSubmit, reset, setValue } = useForm();
   const dispatch = useDispatch();
 
   useEffect(() => {
-    if (id === "editSkill") {
-      setValue("type", skil.type);
-      setValue("level", skil.level);
+    if (id === "editProject") {
+      setValue("title", proj.title);
+      setValue("description", proj.description);
+      
     }
-  }, [skil, id, setValue]);
+  }, [proj, id, setValue]);
 
   const onClick = (data) => {
-    if (id === "editSkill") {
-      dispatch(updateSkill(skil._id, data));
+    const formData = new FormData();
+    formData.append("title", data.title);
+    formData.append("description", data.description);
+    formData.append("projectImage", data.projectImage[0]);
+    if (id === "editProject") {
+      dispatch(updateProject(proj._id, formData));
     } else {
-      dispatch(addSkill(data));
+      dispatch(addProject(formData));
     }
     reset();
   };
@@ -58,32 +59,52 @@ const SkillModal = ({ id, header, skil, submitValue, colorButton }) => {
                         <div className="col-md-12">
                           <div className="md-form mb-0">
                             <label htmlFor="title" className="">
-                              Name
+                              Title
                             </label>
-                            <textarea
+                            <input
                               type="text"
-                              id="type"
-                              name="type"
+                              id="title"
+                              name="title"
                               className="form-control shadow-none"
-                              {...register("type")}
+                              {...register("title")}
                             />
                           </div>
                         </div>
 
                         <div className="col-md-12">
-                          <div className="md-form mb-0">
-                            <label htmlFor="level" className="">
-                              Level
-                            </label>
-                            <input
+                          <div className="md-form">
+                            <label htmlFor="message">Description</label>
+                            <textarea
                               type="text"
-                              id="level"
-                              name="level"
-                              className="form-control shadow-none"
-                              {...register("level")}
+                              name="description"
+                              id="description"
+                              rows="2"
+                              className="form-control md-textarea shadow-none"
+                              {...register("description")}
                             />
                           </div>
                         </div>
+
+                        
+
+                       
+
+                        <div className="col-md-10">
+                          <div className="md-form mb-0">
+                            <label htmlFor="link" className="">
+                              Image
+                            </label>
+                            <input
+                              type="file"
+                              id="projectImage"
+                              name="projectImage"
+                              className="form-control shadow-none"
+                              multiple={false}
+                              {...register("projectImage")}
+                            />
+                          </div>
+                        </div>
+                       
                       </div>
                     </form>
                   </div>
@@ -111,8 +132,7 @@ const SkillModal = ({ id, header, skil, submitValue, colorButton }) => {
         </div>
       </div>
     </div>
- 
- );
+  );
 };
 
-export default SkillModal;
+export default AboutModel;

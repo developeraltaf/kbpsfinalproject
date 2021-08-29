@@ -1,0 +1,26 @@
+
+
+
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .slidersize {
+        width:414px;
+        height:182px;
+  }
+}
+    
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .slidersize {
+        width:414px;
+        height:182px;
+  }
+}
+
+@media only screen  and (min-width : 1000px) {
+    .slidersize {
+        width:800px;
+        height:420px;
+  }
+    }
+

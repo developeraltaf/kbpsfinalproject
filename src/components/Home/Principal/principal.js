@@ -1,6 +1,8 @@
 import React from 'react'
 import Footer from '../HomePage/Footer'
 import Header from '../HomePage/Header'
+import { Link } from "react-router-dom";
+
 import NoticeHeader from '../HomePage/NoticeHeader'
 const principal = () => {
     return (
@@ -42,7 +44,7 @@ const principal = () => {
                 </li>
                 <li>
                   <span>Email:</span>
-                  <a href="mailto:khalid@gmail.com">khalid@gmail.com</a>
+                  <Link to="mailto:khalid@gmail.com">khalid@gmail.com</Link>
                 </li>
                 <li>
                   <span>Phone:</span>
@@ -51,10 +53,10 @@ const principal = () => {
                 <li>
                   <span>Social:</span>
                   <ul className="list_none social_icons radius_social">
-                    <li><a href="#" className="sc_facebook"><i className="ion-social-facebook" /></a></li>
-                    <li><a href="#" className="sc_twitter"><i className="ion-social-twitter" /></a></li>
-                    <li><a href="#" className="sc_gplus"><i className="ion-social-googleplus" /></a></li>
-                    <li><a href="#" className="sc_instagram"><i className="ion-social-instagram-outline" /></a></li>
+                    <li><Link to="#" className="sc_facebook"><i className="ion-social-facebook" /></Link></li>
+                    <li><Link to="#" className="sc_twitter"><i className="ion-social-twitter" /></Link></li>
+                    <li><Link to="#" className="sc_gplus"><i className="ion-social-googleplus" /></Link></li>
+                    <li><Link to="#" className="sc_instagram"><i className="ion-social-instagram-outline" /></Link></li>
                   </ul>
                 </li>
               </ul>
@@ -70,7 +72,7 @@ const principal = () => {
           <div id="accordion-1" className="accordion">
             <div className="card">
               <div className="card-header" id="heading-1-One">
-                <h6 className="mb-0"> <a data-toggle="collapse" href="#collapse-1-One" aria-expanded="true" aria-controls="collapse-1-One" style={{textDecoration:'none'}}>Education</a> </h6>
+                <h6 className="mb-0"> <Link data-toggle="collapse" to="#collapse-1-One" aria-expanded="true" aria-controls="collapse-1-One" style={{textDecoration:'none'}}>Education</Link> </h6>
               </div>
               <div id="collapse-1-One" className="collapse show" aria-labelledby="heading-1-One">
                 <div className="card-body">
@@ -81,7 +83,7 @@ const principal = () => {
             </div>
             <div className="card">
               <div className="card-header" id="heading-1-Two">
-                <h6 className="mb-0"> <a data-toggle="collapse" href="#collapse-1-Two" aria-expanded="true" aria-controls="collapse-1-Two" style={{textDecoration:'none'}}>Professional Experience</a> </h6>
+                <h6 className="mb-0"> <Link data-toggle="collapse" to="#collapse-1-Two" aria-expanded="true" aria-controls="collapse-1-Two" style={{textDecoration:'none'}}>Professional Experience</Link> </h6>
               </div>
               <div id="collapse-1-Two" className="collapse show" aria-labelledby="heading-1-Two">
                 <div className="card-body">
@@ -91,7 +93,7 @@ const principal = () => {
             </div>
             <div className="card">
               <div className="card-header" id="heading-1-Three">
-                <h6 className="mb-0"> <a data-toggle="collapse" href="#collapse-1-Three" aria-expanded="true" aria-controls="collapse-1-Three" style={{textDecoration:'none'}}> Field Of Special Interest</a> </h6>
+                <h6 className="mb-0"> <Link data-toggle="collapse" to="#collapse-1-Three" aria-expanded="true" aria-controls="collapse-1-Three" style={{textDecoration:'none'}}> Field Of Special Interest</Link> </h6>
               </div>
               <div id="collapse-1-Three" className="collapse show" aria-labelledby="heading-1-Three">
                 <div className="card-body">

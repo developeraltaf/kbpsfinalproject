@@ -12,7 +12,7 @@ import WhyChoseUs from "../components/Home/HomePage/WhyChoseUs";
 import Text from "../components/Home/HomePage/Text";
 import AboutUs from "../components/Home/HomePage/AboutUs";
 import OurFaculty from "../components/Home/HomePage/OurFaculty";
-import VideoCampus from "../components/Home/HomePage/VideoCampus";
+//import VideoCampus from "../components/Home/HomePage/VideoCampus";
 import UpcomingEvents from "../components/Home/HomePage/UpcomingEvents";
 import NoOfStudents from "../components/Home/HomePage/NoOfStudents";
 import OurTeachers from "../components/Home/HomePage/OurTeachers";
@@ -21,7 +21,7 @@ import StudentSay from "../components/Home/HomePage/StudentSay";
 import Footer from "../components/Home/HomePage/Footer";
 import Header from "../components/Home/HomePage/Header";
 import Map from "../components/Home/HomePage/Map";
-import PrincipalNotice from "../components/Home/HomePage/PrincipalNotice";
+//import PrincipalNotice from "../components/Home/HomePage/PrincipalNotice";
 import NoticeBoard from "../components/Home/HomePage/NoticeBoard";
 
 

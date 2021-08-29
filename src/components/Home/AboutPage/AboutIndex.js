@@ -1,12 +1,34 @@
-import React,{useState,useEffect} from 'react'
-
+import React, { useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
+import ModalImage from "react-modal-image";
+
 import Footer from '../HomePage/Footer'
 import Header from '../HomePage/Header'
 import NoticeHeader from '../HomePage/NoticeHeader'
-import axios from 'axios'
+import { getprojects } from "../../../actions/aboutAction";
+import { getprojectss } from "../../../actions/teacherAction";
 
-const AboutIndex = () => {
+import { domainName } from "../../../apis/serverApi";
+
+
+
+const AboutIndex = ({ reff }) => {
+
+  const projects = useSelector((state) => state.projects);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getprojects());
+  }, [dispatch]);
+
+  const teachers = useSelector((state) => state.projects);
+  const dispatchh = useDispatch();
+
+  useEffect(() => {
+    dispatch(getprojectss());
+  }, [dispatchh]);
+
     
     return (
         <>  
@@ -76,7 +98,7 @@ const AboutIndex = () => {
           </div>
         </div>
       </section>
- 
+      {projects.map((proj) => (
     <section className="overflow-hidden res_md_p_0">
   <div className="container-fluid p-0">
     <div className="row no-gutters align-items-center">
@@ -86,99 +108,56 @@ const AboutIndex = () => {
             <div className="heading_s1"> 
               <h2>About Us</h2>
             </div>
-            <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary</p>
-            <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
-            
+            <p>{proj.description}</p>
           </div>
         </div>
       </div>
       <div className="col-md-6">
         <div className="animation animated fadeInRight" data-animation="fadeInRight" data-animation-delay="0.03s" style={{animationDelay: '0.03s', opacity: 1}}>
           <div className="overlay_bg_30 about_img z_index_minus1">	
-            <img className="w-100" src="assets/images/about_img.jpg" alt="about_img" />
+          <ModalImage style={{width:'375px',height:'250px'}}
+                      small={domainName + proj.projectImage}
+                      large={domainName + proj.projectImage}
+                      alt={proj.title}
+                    />
           </div>
-          <a href="https://www.youtube.com/watch?v=7e90gBu4pas" className="video_popup video_play">
+          <Link to="https://www.youtube.com/watch?v=7e90gBu4pas" className="video_popup video_play">
             <span className="ripple"><i className="ion-play ml-1" /></span>
-          </a>
+          </Link>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-   
+))}
 <section className="small_pt">
   <div className="container">	
     <div className="row justify-content-center">
+    {teachers.map((proj) => (
       <div className="col-lg-3 col-sm-6">
         <div className="team_box team_style1 box_shadow1 animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.01s" style={{animationDelay: '0.01s', opacity: 1}}>
           <div className="team_img">
-            <img src="assets/images/team_img1.jpg" alt="team1" />
+          <ModalImage style={{width:'375px',height:'250px'}}
+                      small={domainName + proj.projectImage}
+                      large={domainName + proj.projectImage}
+                      alt={proj.title}
+                    />
             <ul className="list_none social_icons social_white">
-              <li><a href="#"><i className="ion-social-facebook" /></a></li>
-              <li><a href="#"><i className="ion-social-twitter" /></a></li>
-              <li><a href="#"><i className="ion-social-googleplus" /></a></li>
-              <li><a href="#"><i className="ion-social-instagram-outline" /></a></li>
+              <li><Link to="#"><i className="ion-social-facebook" /></Link></li>
+              <li><Link to="#"><i className="ion-social-twitter" /></Link></li>
+              <li><Link to="#"><i className="ion-social-googleplus" /></Link></li>
+              <li><Link to="#"><i className="ion-social-instagram-outline" /></Link></li>
             </ul>
           </div>
           <div className="team_title radius_lbrb_10 text-center">
-            <h5><a href="#">Aden Smith</a></h5>
+            <h5><Link to="#">{proj.title}</Link></h5>
             <span>Head Of Department</span>
           </div>
         </div>
       </div>
-      <div className="col-lg-3 col-sm-6">
-        <div className="team_box team_style1 box_shadow1 animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.02s" style={{animationDelay: '0.02s', opacity: 1}}>
-          <div className="team_img">
-            <img src="assets/images/team_img2.jpg" alt="team2" />
-            <ul className="list_none social_icons social_white">
-              <li><a href="#"><i className="ion-social-facebook" /></a></li>
-              <li><a href="#"><i className="ion-social-twitter" /></a></li>
-              <li><a href="#"><i className="ion-social-googleplus" /></a></li>
-              <li><a href="#"><i className="ion-social-instagram-outline" /></a></li>
-            </ul>
-          </div>
-          <div className="team_title radius_lbrb_10 text-center">
-            <h5><a href="#">Kally Brooks</a></h5>
-            <span>Professor</span>
-          </div>
-        </div>
-      </div>
-      <div className="col-lg-3 col-sm-6">
-        <div className="team_box team_style1 box_shadow1 animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.03s" style={{animationDelay: '0.03s', opacity: 1}}>
-          <div className="team_img">
-            <img src="assets/images/team_img3.jpg" alt="team3" />
-            <ul className="list_none social_icons social_white">
-              <li><a href="#"><i className="ion-social-facebook" /></a></li>
-              <li><a href="#"><i className="ion-social-twitter" /></a></li>
-              <li><a href="#"><i className="ion-social-googleplus" /></a></li>
-              <li><a href="#"><i className="ion-social-instagram-outline" /></a></li>
-            </ul>
-          </div>
-          <div className="team_title radius_lbrb_10 text-center">
-            <h5><a href="#">David clark</a></h5>
-            <span>Chemistry Teacher</span>
-          </div>
-        </div>
-      </div>
-      <div className="col-lg-3 col-sm-6">
-        <div className="team_box team_style1 box_shadow1 animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.04s" style={{animationDelay: '0.04s', opacity: 1}}>
-          <div className="team_img">
-            <img src="assets/images/team_img4.jpg" alt="team4" />
-            <ul className="list_none social_icons social_white">
-              <li><a href="#"><i className="ion-social-facebook" /></a></li>
-              <li><a href="#"><i className="ion-social-twitter" /></a></li>
-              <li><a href="#"><i className="ion-social-googleplus" /></a></li>
-              <li><a href="#"><i className="ion-social-instagram-outline" /></a></li>
-            </ul>
-          </div>
-          <div className="team_title radius_lbrb_10 text-center">
-            <h5><a href="#">Rebeka Alig</a></h5>
-            <span>English Teacher</span>
-          </div>
-        </div>
-      </div>
-      
+    ))}
+     
     </div>
   </div>
 </section>

@@ -1,6 +1,8 @@
 import React from 'react'
 import Footer from '../HomePage/Footer'
 import Header from '../HomePage/Header'
+import { Link } from "react-router-dom";
+
 import NoticeHeader from '../HomePage/NoticeHeader'
 const TeacherStaff = () => {
     return (
@@ -28,14 +30,14 @@ const TeacherStaff = () => {
             <div className="team_img">
               <img src="assets/images/team_img1.jpg" alt="team1" />
               <ul className="list_none social_icons social_white">
-                <li><a href="#"><i className="ion-social-facebook" /></a></li>
-                <li><a href="#"><i className="ion-social-twitter" /></a></li>
-                <li><a href="#"><i className="ion-social-googleplus" /></a></li>
-                <li><a href="#"><i className="ion-social-instagram-outline" /></a></li>
+                <li><Link to="#"><i className="ion-social-facebook" /></Link></li>
+                <li><Link to="#"><i className="ion-social-twitter" /></Link></li>
+                <li><Link to="#"><i className="ion-social-googleplus" /></Link></li>
+                <li><Link to="#"><i className="ion-social-instagram-outline" /></Link></li>
               </ul>
             </div>
             <div className="team_title radius_lbrb_10 text-center">
-              <h5><a href="#">Aden Smith</a></h5>
+              <h5><Link to="#">Aden Smith</Link></h5>
               <span>Head Of Department</span>
             </div>
           </div>
@@ -45,14 +47,14 @@ const TeacherStaff = () => {
             <div className="team_img">
               <img src="assets/images/team_img2.jpg" alt="team2" />
               <ul className="list_none social_icons social_white">
-                <li><a href="#"><i className="ion-social-facebook" /></a></li>
-                <li><a href="#"><i className="ion-social-twitter" /></a></li>
-                <li><a href="#"><i className="ion-social-googleplus" /></a></li>
-                <li><a href="#"><i className="ion-social-instagram-outline" /></a></li>
+                <li><Link to="#"><i className="ion-social-facebook" /></Link></li>
+                <li><Link to="#"><i className="ion-social-twitter" /></Link></li>
+                <li><Link to="#"><i className="ion-social-googleplus" /></Link></li>
+                <li><Link to="#"><i className="ion-social-instagram-outline" /></Link></li>
               </ul>
             </div>
             <div className="team_title radius_lbrb_10 text-center">
-              <h5><a href="#">Kally Brooks</a></h5>
+              <h5><Link to="#">Kally Brooks</Link></h5>
               <span>Professor</span>
             </div>
           </div>
@@ -62,14 +64,14 @@ const TeacherStaff = () => {
             <div className="team_img">
               <img src="assets/images/team_img3.jpg" alt="team3" />
               <ul className="list_none social_icons social_white">
-                <li><a href="#"><i className="ion-social-facebook" /></a></li>
-                <li><a href="#"><i className="ion-social-twitter" /></a></li>
-                <li><a href="#"><i className="ion-social-googleplus" /></a></li>
-                <li><a href="#"><i className="ion-social-instagram-outline" /></a></li>
+                <li><Link to="#"><i className="ion-social-facebook" /></Link></li>
+                <li><Link to="#"><i className="ion-social-twitter" /></Link></li>
+                <li><Link to="#"><i className="ion-social-googleplus" /></Link></li>
+                <li><Link to="#"><i className="ion-social-instagram-outline" /></Link></li>
               </ul>
             </div>
             <div className="team_title radius_lbrb_10 text-center">
-              <h5><a href="#">David clark</a></h5>
+              <h5><Link to="#">David clark</Link></h5>
               <span>Chemistry Teacher</span>
             </div>
           </div>
@@ -79,14 +81,14 @@ const TeacherStaff = () => {
             <div className="team_img">
               <img src="assets/images/team_img4.jpg" alt="team4" />
               <ul className="list_none social_icons social_white">
-                <li><a href="#"><i className="ion-social-facebook" /></a></li>
-                <li><a href="#"><i className="ion-social-twitter" /></a></li>
-                <li><a href="#"><i className="ion-social-googleplus" /></a></li>
-                <li><a href="#"><i className="ion-social-instagram-outline" /></a></li>
+                <li><Link to="#"><i className="ion-social-facebook" /></Link></li>
+                <li><Link to="#"><i className="ion-social-twitter" /></Link></li>
+                <li><Link to="#"><i className="ion-social-googleplus" /></Link></li>
+                <li><Link to="#"><i className="ion-social-instagram-outline" /></Link></li>
               </ul>
             </div>
             <div className="team_title radius_lbrb_10 text-center">
-              <h5><a href="#">Rebeka Alig</a></h5>
+              <h5><Link to="#">Rebeka Alig</Link></h5>
               <span>English Teacher</span>
             </div>
           </div>
@@ -96,14 +98,14 @@ const TeacherStaff = () => {
             <div className="team_img">
               <img src="assets/images/team_img1.jpg" alt="team5" />
               <ul className="list_none social_icons social_white">
-                <li><a href="#"><i className="ion-social-facebook" /></a></li>
-                <li><a href="#"><i className="ion-social-twitter" /></a></li>
-                <li><a href="#"><i className="ion-social-googleplus" /></a></li>
-                <li><a href="#"><i className="ion-social-instagram-outline" /></a></li>
+                <li><Link to="#"><i className="ion-social-facebook" /></Link></li>
+                <li><Link to="#"><i className="ion-social-twitter" /></Link></li>
+                <li><Link to="#"><i className="ion-social-googleplus" /></Link></li>
+                <li><Link to="#"><i className="ion-social-instagram-outline" /></Link></li>
               </ul>
             </div>
             <div className="team_title radius_lbrb_10 text-center">
-              <h5><a href="#">Henry Pole</a></h5>
+              <h5><Link to="#">Henry Pole</Link></h5>
               <span>English Teacher</span>
             </div>
           </div>
@@ -113,14 +115,14 @@ const TeacherStaff = () => {
             <div className="team_img">
               <img src="assets/images/team_img6.jpg" alt="team6" />
               <ul className="list_none social_icons social_white">
-                <li><a href="#"><i className="ion-social-facebook" /></a></li>
-                <li><a href="#"><i className="ion-social-twitter" /></a></li>
-                <li><a href="#"><i className="ion-social-googleplus" /></a></li>
-                <li><a href="#"><i className="ion-social-instagram-outline" /></a></li>
+                <li><Link to="#"><i className="ion-social-facebook" /></Link></li>
+                <li><Link to="#"><i className="ion-social-twitter" /></Link></li>
+                <li><Link to="#"><i className="ion-social-googleplus" /></Link></li>
+                <li><Link to="#"><i className="ion-social-instagram-outline" /></Link></li>
               </ul>
             </div>
             <div className="team_title radius_lbrb_10 text-center">
-              <h5><a href="#">Jesica Belly</a></h5>
+              <h5><Link to="#">Jesica Belly</Link></h5>
               <span>Chemistry Teacher</span>
             </div>
           </div>
@@ -130,14 +132,14 @@ const TeacherStaff = () => {
             <div className="team_img">
               <img src="assets/images/team_img4.jpg" alt="team7" />
               <ul className="list_none social_icons social_white">
-                <li><a href="#"><i className="ion-social-facebook" /></a></li>
-                <li><a href="#"><i className="ion-social-twitter" /></a></li>
-                <li><a href="#"><i className="ion-social-googleplus" /></a></li>
-                <li><a href="#"><i className="ion-social-instagram-outline" /></a></li>
+                <li><Link to="#"><i className="ion-social-facebook" /></Link></li>
+                <li><Link to="#"><i className="ion-social-twitter" /></Link></li>
+                <li><Link to="#"><i className="ion-social-googleplus" /></Link></li>
+                <li><Link to="#"><i className="ion-social-instagram-outline" /></Link></li>
               </ul>
             </div>
             <div className="team_title radius_lbrb_10 text-center">
-              <h5><a href="#">John Figery</a></h5>
+              <h5><Link to="#">John Figery</Link></h5>
               <span>Computer Teacher</span>
             </div>
           </div>
@@ -147,14 +149,14 @@ const TeacherStaff = () => {
             <div className="team_img">
               <img src="assets/images/team_img2.jpg" alt="team8" />
               <ul className="list_none social_icons social_white">
-                <li><a href="#"><i className="ion-social-facebook" /></a></li>
-                <li><a href="#"><i className="ion-social-twitter" /></a></li>
-                <li><a href="#"><i className="ion-social-googleplus" /></a></li>
-                <li><a href="#"><i className="ion-social-instagram-outline" /></a></li>
+                <li><Link to="#"><i className="ion-social-facebook" /></Link></li>
+                <li><Link to="#"><i className="ion-social-twitter" /></Link></li>
+                <li><Link to="#"><i className="ion-social-googleplus" /></Link></li>
+                <li><Link to="#"><i className="ion-social-instagram-outline" /></Link></li>
               </ul>
             </div>
             <div className="team_title radius_lbrb_10 text-center">
-              <h5><a href="#">Wendy Core</a></h5>
+              <h5><Link to="#">Wendy Core</Link></h5>
               <span>Computer Teacher</span>
             </div>
           </div>

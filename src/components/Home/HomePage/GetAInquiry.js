@@ -174,7 +174,6 @@ const GetAInquiry = ({ reff }) => {
                       type="text"
                       name="message"
                       id="message"
-                      rows="3"
                       className="form-control md-textarea shadow-none"
                       {...register("message", {
                         required: true,

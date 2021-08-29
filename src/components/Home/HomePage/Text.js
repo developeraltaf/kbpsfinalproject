@@ -18,7 +18,35 @@ const Text = ({ reff }) => {
     dispatch(getprojects());
   }, [dispatch]);
 
- 
+  const options = {
+    margin: 30,
+    loop:true,
+    responsiveClass: true,
+    dots: false,
+    autoplay: true,
+    slideTransition: 'linear',
+    autoplayTimeout: 2000,
+    autoplaySpeed: 1000,
+    autoplayHoverPause: true,
+    responsive: {
+        0: {
+            items: 1,
+        },
+        400: {
+            items: 1,
+        },
+        600: {
+            items: 2,
+        },
+        700: {
+            items: 3,
+        },
+        1000: {
+            items: 5,
+
+        }
+    },
+};
   return (
     <>
       <div className="container-fluid" style={{ backgroundColor: '#EFF9EE' }}>
@@ -32,17 +60,17 @@ const Text = ({ reff }) => {
         </div>
         
         <div className="row" >
-          <OwlCarousel items={5} autoplay={true} autoplayHoverPause={true} loop={true} margin={10} >
+          <OwlCarousel className="slider-items owl-carousel" {...options}  >
 
             {projects.map((proj) => (
               <div className="col-3" style={{ width: 'auto', minWidth: '0' }}>
                 <div className="our-team" style={{ borderRadius: '40px' }}>
                   <div className="picture ">
                   <ModalImage
-            small={domainName + proj.projectImage}
-            large={domainName + proj.projectImage}
-            alt={proj.title}
-          />
+                      small={domainName + proj.projectImage}
+                      large={domainName + proj.projectImage}
+                      alt={proj.title}
+                    />
                   </div>
                   <div className="team-content">
                     <h4 className="name">{proj.title}</h4>
