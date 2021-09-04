@@ -1,9 +1,7 @@
 
 
 
-import React, { useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { getprojects } from "../../../actions/projectAction";
+import React, { useEffect, useState } from "react";
 import ModalImage from "react-modal-image";
 import { domainName } from "../../../apis/serverApi";
 import '../css/App.css'
@@ -11,12 +9,17 @@ import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 const Text = ({ reff }) => {
-  const projects = useSelector((state) => state.projects);
-  const dispatch = useDispatch();
+  
+    const [projects, setprojects] = useState([])
+      const getUsers=async()=>{
+        const response = await fetch('https://school.umawedsbala.com/projects');
+        setprojects(await response.json());
+      }    
 
-  useEffect(() => {
-    dispatch(getprojects());
-  }, [dispatch]);
+      useEffect(()=>{
+        getUsers();
+      })
+  
 
   const options = {
     margin: 30,

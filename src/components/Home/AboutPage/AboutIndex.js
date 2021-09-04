@@ -1,33 +1,34 @@
-import React, { useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import React, { useEffect, useState} from "react";
 import { Link } from "react-router-dom";
 import ModalImage from "react-modal-image";
-
 import Footer from '../HomePage/Footer'
 import Header from '../HomePage/Header'
 import NoticeHeader from '../HomePage/NoticeHeader'
-import { getprojects } from "../../../actions/aboutAction";
-import { getprojectss } from "../../../actions/teacherAction";
-
 import { domainName } from "../../../apis/serverApi";
 
 
 
 const AboutIndex = ({ reff }) => {
 
-  const projects = useSelector((state) => state.projects);
-  const dispatch = useDispatch();
+  const [about, setabout] = useState([])
+      const getUserss=async()=>{
+        const response = await fetch('https://school.umawedsbala.com/about');
+        setabout(await response.json());
+      }    
 
-  useEffect(() => {
-    dispatch(getprojects());
-  }, [dispatch]);
+      useEffect(()=>{
+        getUserss();
+      })
 
-  const teachers = useSelector((state) => state.projects);
-  const dispatchh = useDispatch();
+      const [teacher, setteacher] = useState([])
+      const getUsers=async()=>{
+        const response = await fetch('https://school.umawedsbala.com/teacher');
+        setteacher(await response.json());
+      }    
 
-  useEffect(() => {
-    dispatch(getprojectss());
-  }, [dispatchh]);
+      useEffect(()=>{
+        getUsers();
+      })
 
     
     return (
@@ -47,8 +48,7 @@ const AboutIndex = ({ reff }) => {
           </div>
         </div>
       </section>
-      {/* END SECTION BANNER */}
-      {/* START SECTION FEATURE */}
+     
       <section style={{backgroundImage: 'url("/assets/images/white_wall.png")', backgroundRepeat:'no-repeat',backgroundPosition: 'center',backgroundSize: 'cover',paddingTop:'38px'}} className="bg_gray">
         <div className="container">
           <div className="row justify-content-center">
@@ -98,7 +98,7 @@ const AboutIndex = ({ reff }) => {
           </div>
         </div>
       </section>
-      {projects.map((proj) => (
+      {about.map((proj) => (
     <section className="overflow-hidden res_md_p_0">
   <div className="container-fluid p-0">
     <div className="row no-gutters align-items-center">
@@ -131,10 +131,11 @@ const AboutIndex = ({ reff }) => {
 </section>
 
 ))}
+
 <section className="small_pt">
   <div className="container">	
     <div className="row justify-content-center">
-    {teachers.map((proj) => (
+    {teacher.map((proj) => (
       <div className="col-lg-3 col-sm-6">
         <div className="team_box team_style1 box_shadow1 animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.01s" style={{animationDelay: '0.01s', opacity: 1}}>
           <div className="team_img">

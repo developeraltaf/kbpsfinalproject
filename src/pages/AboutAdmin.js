@@ -13,6 +13,7 @@ function AboutAdmin() {
     projectImage: "",
   });
 
+  
   const ondelteClick = (project) => {
     dispatch(deleteProject(project._id));
   };

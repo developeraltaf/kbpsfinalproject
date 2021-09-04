@@ -18,12 +18,7 @@ export const SidebarData = [
     icon: <IoIcons.IoIosPaper />,
     cName: "nav-text",
   },
-  {
-    title: "Experiences",
-    path: "/experience",
-    icon: <FcIcons.FcBusiness />,
-    cName: "nav-text",
-  },
+  
   {
     title: "About Notice",
     path: "/skill",
