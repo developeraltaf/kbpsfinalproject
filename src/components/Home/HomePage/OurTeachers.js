@@ -1,113 +1,88 @@
-import React from 'react'
+import React, { useEffect, useState} from "react";
+import { domainName } from "../../../apis/serverApi";
+import ModalImage from "react-modal-image";
+
 import { Link } from "react-router-dom";
 import '../css/App.css'
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 const OurTeachers = () => {
+
+  const [teacher, setteacher] = useState([])
+  const getUsers=async()=>{
+    const response = await fetch('https://school.umawedsbala.com/teacher');
+    setteacher(await response.json());
+  }    
+
+  useEffect(()=>{
+    getUsers();
+  })
+  const options = {
+    margin: 30,
+    loop:true,
+    responsiveClass: true,
+    dots: false,
+    autoplay: true,
+    slideTransition: 'linear',
+    autoplayTimeout: 2000,
+    autoplaySpeed: 1000,
+    autoplayHoverPause: true,
+    responsive: {
+        0: {
+            items: 1,
+        },
+        400: {
+            items: 1,
+        },
+        600: {
+            items: 2,
+        },
+        700: {
+            items: 3,
+        },
+        1000: {
+            items: 5,
+
+        }
+    },
+};
     return (
       <>
-      <section className="instructor-section gradient-bg">
-      <div className="container">
-        <div className="row">
 
-          <div className="col-lg-12">
-             <div className="text-center animation" data-animation="fadeInUp" data-animation-delay="0.01s">
-          <div className="heading_s1 text-center">
-            <h2>ADMINISTRATION</h2>
-          </div>
-          <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text</p>
-          <div className="small_divider" />
-        </div>
-          </div>
-        </div>
-        <div className="row">
-        <OwlCarousel items={4} autoplay={true} autoplayHoverPause={true} loop={true} margin={10} >
+<section className="small_pt">
+  <div className="container">	
+    <div className="row justify-content-center">
 
-          <div className="col-lg-3 col-md-6" style={{width:'auto',minWidth:'0'}}>
-            <div className="single-instructor">
-             
-              <div className="instructor-image">
-                <Link to="#"><img src="assets/images/instructor-1.png" alt="khalid" /></Link>
-              </div>
-              <div className="instructor-content">
-                <h4><Link to="#">john doe</Link></h4>
-                <span>founder CEO</span>
-              </div>
-              <div className="hover-state">
-                <ul>
-                  <li><Link to="#"><i className="fa fa-facebook" /></Link></li>
-                  <li><Link to="#"><i className="fa fa-twitter" /></Link></li>
-                  <li><Link to="#"><i className="fa fa-linkedin" /></Link></li>
-                  <li><Link to="#"><i className="fa fa-instagram" /></Link></li>
-                </ul>
-              </div>
-            </div>
+    {teacher.map((proj) => (
+      <div className="col-lg-3 col-sm-6">
+        <div className="team_box team_style1 box_shadow1 animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.01s" style={{animationDelay: '0.01s', opacity: 1}}>
+          <div className="team_img">
+          <ModalImage style={{width:'375px',height:'250px'}}
+                      small={domainName + proj.projectImage}
+                      large={domainName + proj.projectImage}
+                      alt={proj.title}
+                    />
+            <ul className="list_none social_icons social_white">
+              <li><Link to="#"><i className="ion-social-facebook" /></Link></li>
+              <li><Link to="#"><i className="ion-social-twitter" /></Link></li>
+              <li><Link to="#"><i className="ion-social-googleplus" /></Link></li>
+              <li><Link to="#"><i className="ion-social-instagram-outline" /></Link></li>
+            </ul>
           </div>
-          <div className="col-lg-3 col-md-6" style={{width:'auto',minWidth:'0'}}>
-            <div className="single-instructor diffrent-bg-color">
-              <div className="instructor-image">
-                <Link to="#"><img src="assets/images/instructor-3.png" alt="khalid" /></Link>
-              </div>
-              <div className="instructor-content">
-                <h4><Link to="#">arya stark</Link></h4>
-                <span>Chemistry Teacher</span>
-              </div>
-              <div className="hover-state">
-                <ul>
-                  <li><Link to="#"><i className="fa fa-facebook" /></Link></li>
-                  <li><Link to="#"><i className="fa fa-twitter" /></Link></li>
-                  <li><Link to="#"><i className="fa fa-linkedin" /></Link></li>
-                  <li><Link to="#"><i className="fa fa-instagram" /></Link></li>
-                </ul>
-              </div>
-            </div>
+          <div className="team_title radius_lbrb_10 text-center">
+            <h5><Link to="#">{proj.title}</Link></h5>
+            <span>Head Of Department</span>
           </div>
-          <div className="col-lg-3 col-md-6" style={{width:'auto',minWidth:'0'}}>
-            <div className="single-instructor">
-              <div className="instructor-image">
-                <Link to="#"><img src="assets/images/instructor-2.png" alt="khalid" /></Link>
-              </div>
-              <div className="instructor-content">
-                <h4><Link to="#">chris wokes</Link></h4>
-                <span>Physics Teacher</span>
-              </div>
-              <div className="hover-state">
-                <ul>
-                  <li><Link to="#"><i className="fa fa-facebook" /></Link></li>
-                  <li><Link to="#"><i className="fa fa-twitter" /></Link></li>
-                  <li><Link to="#"><i className="fa fa-linkedin" /></Link></li>
-                  <li><Link to="#"><i className="fa fa-instagram" /></Link></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-3 col-md-6" style={{width:'auto',minWidth:'0'}}>
-            <div className="single-instructor diffrent-bg-color">
-              <div className="instructor-image">
-                <Link to="#"><img src="assets/images/instructor-4.png" alt="khalid" /></Link>
-              </div>
-              <div className="instructor-content">
-                <h4><Link to="#">devid walter</Link></h4>
-                <span>Math Teacher</span>
-              </div>
-              <div className="hover-state">
-                <ul>
-                  <li><Link to="#"><i className="fa fa-facebook" /></Link></li>
-                  <li><Link to="#"><i className="fa fa-twitter" /></Link></li>
-                  <li><Link to="#"><i className="fa fa-linkedin" /></Link></li>
-                  <li><Link to="#"><i className="fa fa-instagram" /></Link></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          </OwlCarousel>
-       
         </div>
-        
-        
       </div>
-    </section>
+    ))}
+     
+    </div>
+  </div>
+</section>
+
+       
 </>
     )
 }
