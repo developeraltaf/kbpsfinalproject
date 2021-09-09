@@ -1,6 +1,6 @@
 import {
     addProjectApi,
-    getProjectsApi,
+    getTeachersApi,
     deleteProjectApi,
     updateProjectApi,
   } from "../apis/teacherApi";
@@ -8,8 +8,8 @@ import {
   
   export const getprojectss = () => async (dispatch) => {
     try {
-      const { data } = await getProjectsApi();
-      dispatch({ type: "GET_PROJECTS", payload: data });
+      const { data } = await getTeachersApi();
+      dispatch({ type: "GET_TEACHERS", payload: data });
     } catch (error) {
       console.log(error);
     }

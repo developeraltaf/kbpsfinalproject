@@ -5,7 +5,7 @@ import ProjectModal from "../components/Admin/AboutModel";
 import Table from "../components/Admin/Table";
 
 function AboutAdmin() {
-  const projects = useSelector((state) => state.projects);
+  const projects = useSelector((state) => state.about);
   const dispatch = useDispatch();
   const [selectedProject, setSelectedProject] = useState({
     title: "",

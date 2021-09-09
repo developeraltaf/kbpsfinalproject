@@ -2,7 +2,6 @@ import React from "react";
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import * as IoIcons from "react-icons/io";
-import * as FcIcons from "react-icons/fc";
 import * as GoIcons from "react-icons/go";
 
 export const SidebarData = [
@@ -40,6 +39,12 @@ export const SidebarData = [
   {
     title: "Teacher",
     path: "/adminteacher",
+    icon: <GoIcons.GoProject />,
+    cName: "nav-text",
+  },
+  {
+    title: "Slider",
+    path: "/slideradmin",
     icon: <GoIcons.GoProject />,
     cName: "nav-text",
   },

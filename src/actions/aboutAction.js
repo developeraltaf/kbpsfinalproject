@@ -1,15 +1,15 @@
 import {
     addProjectApi,
-    getProjectsApi,
+    getaboutsApi,
     deleteProjectApi,
     updateProjectApi,
   } from "../apis/aboutApi";
   import { toastSuccess, toastError } from "../shared/toast";
   
-  export const getprojects = () => async (dispatch) => {
+  export const getprojectsabout = () => async (dispatch) => {
     try {
-      const { data } = await getProjectsApi();
-      dispatch({ type: "GET_PROJECTS", payload: data });
+      const { data } = await getaboutsApi();
+      dispatch({ type: "GET_ABOUTS", payload: data });
     } catch (error) {
       console.log(error);
     }

@@ -1,16 +1,14 @@
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { deleteProject } from "../actions/teacherAction";
-import ProjectModal from "../components/Admin/TeacherModel";
+import { deleteProject } from "../actions/sliderAction";
+import ProjectModal from "../components/Admin/HomeSliderModel";
 import Table from "../components/Admin/Table";
 
-function TeacherAdmin() {
-  const projects = useSelector((state) => state.teacher);
+function SliderAdmin() {
+  const homeslider = useSelector((state) => state.homeslider);
   const dispatch = useDispatch();
   const [selectedProject, setSelectedProject] = useState({
-    title: "",
-    description: "",   
-    projectImage: "",
+    projectImage: ""
   });
 
   const ondelteClick = (project) => {
@@ -28,22 +26,22 @@ function TeacherAdmin() {
         onEditClick={onEditClick}
         idModalAdd="addProject"
         idModalEdit="editProject"
-        title="Teacher"
-        headerText={["Title",  "Image", "Edit"]}
-        headerProprities={["title",  "projectImage",".","."]}
-        tableData={projects}
+        title="Slider"
+        headerText={["Image"]}
+        headerProprities={["projectImage"]}
+        tableData={homeslider}
       />
 
       <ProjectModal
         id="addProject"
-        header="Add Teacher"
+        header="Add Project"
         proj={deleteProject}
         submitValue="Add Project"
         colorButton="success"
       />
       <ProjectModal
         id="editProject"
-        header="Edit Teacher"
+        header="Edit Project"
         proj={selectedProject}
         submitValue="Edit Project"
         colorButton="warning"
@@ -52,4 +50,4 @@ function TeacherAdmin() {
   );
 }
 
-export default TeacherAdmin;
+export default SliderAdmin;

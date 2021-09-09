@@ -4,7 +4,7 @@ export const addProjectApi = (project) => {
   return api.post("/teacher/", project);
 };
 
-export const getProjectsApi = () => {
+export const getTeachersApi = () => {
   return api.get("/teacher/");
 };
 

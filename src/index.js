@@ -11,7 +11,10 @@ import thunk from "redux-thunk";
 import { getEducations } from "./actions/educationAction";
 import { getExperiences } from "./actions/experienceAction";
 import { getprojects } from "./actions/projectAction";
+import {getprojecthomeslider} from "./actions/sliderAction"
+import {getprojectss} from "./actions/teacherAction"
 import { getSkills } from "./actions/skillAction";
+import {getprojectsabout} from "./actions/aboutAction"
 import api from "./apis/serverApi";
 
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
@@ -20,7 +23,11 @@ const store = createStore(allReducers, composeEnhancer(applyMiddleware(thunk)));
 store.dispatch(getEducations());
 store.dispatch(getExperiences());
 store.dispatch(getprojects());
+store.dispatch(getprojectss());
 store.dispatch(getSkills());
+store.dispatch(getprojecthomeslider());
+store.dispatch(getprojectsabout());
+
 
 const user = JSON.parse(localStorage.getItem("userData"));
 
