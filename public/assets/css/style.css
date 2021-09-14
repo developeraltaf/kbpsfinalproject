@@ -23,6 +23,9 @@
 /*===================================*
   01. GENERAL STYLE
 *===================================*/
+html{
+	scroll-behavior: smooth;
+}
 body {
 	background: #ffffff none repeat scroll 0 0;
     color: #888888;

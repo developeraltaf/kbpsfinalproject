@@ -40,15 +40,16 @@ const principal = () => {
               <ul className="contact_info list_none">
                 <li>
                   <span>Address:</span>
-                  <address>Palam New Delhi India</address>
+                  <address>
+RZ- 219, Street no. 18 E, Sadh Nagar Palam, Colony Delhi, India 110045</address>
                 </li>
                 <li>
                   <span>Email:</span>
-                  <Link to="mailto:khalid@gmail.com">khalid@gmail.com</Link>
+                  <Link to="mailto:kanwalbhartischools@gmail.com">kanwalbhartischools@gmail.com</Link>
                 </li>
                 <li>
                   <span>Phone:</span>
-                  <p>+91-9102603030</p>
+                  <p>+91-9911228484</p>
                 </li>
                 <li>
                   <span>Social:</span>

@@ -21,7 +21,7 @@ import StudentSay from "../components/Home/HomePage/StudentSay";
 import Footer from "../components/Home/HomePage/Footer";
 import Header from "../components/Home/HomePage/Header";
 import Map from "../components/Home/HomePage/Map";
-//import PrincipalNotice from "../components/Home/HomePage/PrincipalNotice";
+import PrincipalNotice from "../components/Home/HomePage/PrincipalNotice";
 import NoticeBoard from "../components/Home/HomePage/NoticeBoard";
 
 
@@ -45,9 +45,7 @@ const HomePage = () => {
       {!isLogged && <Header  />}
       <Slider />
       <SchoolTime />
-      {/* <PrincipalNotice /> */}
-      <NoticeBoard />
-
+      <PrincipalNotice />
       <WhyChoseUs />
       <Text />
       <AboutUs />

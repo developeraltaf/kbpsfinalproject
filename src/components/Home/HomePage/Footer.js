@@ -34,15 +34,16 @@ const Footer = () => {
                                 <ul className="contact_info contact_info_light list_none">
                                     <li>
                                         <i className="fa fa-map-marker-alt " />
-                                        <address>Califonia Street san Francisco, CA</address>
+                                        <address>RZ- 219, Street no. 18 E, Sadh Nagar Palam, Colony (12.80 km)
+Delhi 110045</address>
                                     </li>
                                     <li>
                                         <i className="fa fa-envelope" />
-                                        <Link to="/"><span className="__cf_email__" data-cfemail="5e373038311e2d372a3b303f333b703d3133" style={{color:'white'}}>codesparrows@gmail.com</span></Link>
+                                        <Link to="/"><span className="__cf_email__" data-cfemail="5e373038311e2d372a3b303f333b703d3133" style={{color:'white'}}>kanwalbhartischools@gmail.com</span></Link>
                                     </li>
                                     <li>
                                         <i className="fa fa-mobile-alt" />
-                                        <p>+91 9102603030</p>
+                                        <p>+91 9911228484</p>
                                     </li>
                                 </ul>
                             </div>
@@ -120,7 +121,7 @@ const Footer = () => {
                     <div className="container">
                         <div className="row align-items-center">
                             <div className="col-md-6">
-                                <p className="copyright m-md-0 text-center text-md-left">© 2018 All Rights Reserved by KBPS SCHOOL.</p>
+                                <p className="copyright m-md-0 text-center text-md-left">© 2021 All Rights Reserved by KBPS SCHOOL.</p>
                             </div>
                             <div className="col-md-6">
                                 <ul className="list_none footer_link text-center text-md-right">

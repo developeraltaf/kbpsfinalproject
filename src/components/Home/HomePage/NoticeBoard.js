@@ -12,6 +12,7 @@ const OurFaculty = () => {
   , '4 typeface without relying on meaningful content.',
    '5 Lorem ipsum may be used as a placeholder'];
     return (
+      
 <section className="small_pt">
   <div className="container">
     <div className="row justify-content-center">

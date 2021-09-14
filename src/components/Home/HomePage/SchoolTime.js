@@ -15,7 +15,7 @@ const SchoolTime = () => {
      }
     return (
 <>
-<section className="countdown-section">
+<section style={{overflow: "hidden"}} className="countdown-section">
   <div className="container">
     <div className="common-section">
       <div className="counter-shape">

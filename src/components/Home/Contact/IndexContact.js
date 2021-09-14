@@ -112,7 +112,7 @@ const IndexContact = () => {
                 </div>
                 <div className="intro_desc">
                   <h5>Call Us</h5>
-                  <p>+91-9102603030</p>
+                  <p>+91-9911228484</p>
                 </div>
               </div>
             </div>
@@ -123,7 +123,7 @@ const IndexContact = () => {
                 </div>
                 <div className="intro_desc">
                   <h5>Email</h5>
-                  <p>codesparrows@gmail.com</p>
+                  <p>kanwalbhartischools@gmail.com</p>
                 </div>
               </div>
             </div>

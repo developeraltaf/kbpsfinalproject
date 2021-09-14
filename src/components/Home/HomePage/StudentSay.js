@@ -24,7 +24,7 @@ const StudentSay = () => {
             </div>
             <div className="testi_meta">
               <div className="testi_user">
-                <h6>KHALID</h6>
+                <h6> Sh. Dilawar Singh</h6>
                 <span className="text_default">Co-Founder</span>
               </div>
               <div className="testi_desc">
@@ -38,7 +38,7 @@ const StudentSay = () => {
             </div>
             <div className="testi_meta">
               <div className="testi_user">
-                <h6>KHALID</h6>
+                <h6> Sh. Dilawar Singh</h6>
                 <span className="text_default">Co-Founder</span>
               </div>
               <div className="testi_desc">
@@ -52,7 +52,7 @@ const StudentSay = () => {
             </div>
             <div className="testi_meta">
               <div className="testi_user">
-                <h6>KHALID</h6>
+                <h6> Sh. Dilawar Singh</h6>
                 <span className="text_default">Co-Founder</span>
               </div>
               <div className="testi_desc">
