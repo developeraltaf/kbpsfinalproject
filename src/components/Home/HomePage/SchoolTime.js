@@ -26,17 +26,15 @@ const SchoolTime = () => {
       <div className="row">
         <div className="col-6 col-lg-6">
           <div className="countdown-left">
-            <h2 className="home-2"><span>{Schooltime}</span></h2>
+            <h2 className="home-2"><span className="countersmall">{Schooltime}</span></h2>
           </div>
         </div>
        
         <div className="col-6 col-lg-6">
           <div className="countdown-right">
-            <ul className="countdown">
-              <li>
-                <span className="hours">{currTime}</span>
-              </li>
-            </ul>
+            
+          <h2 className="home-2"><span className="hours numbersmall">{currTime}</span></h2>
+             
           </div>
         </div>
       </div>

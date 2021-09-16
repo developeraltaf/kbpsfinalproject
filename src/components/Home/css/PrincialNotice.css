@@ -1,0 +1,574 @@
+
+.rs-image-effect-shine {
+    position: relative;
+    overflow: hidden;
+  }
+  .rs-image-effect-shine::before {
+    position: absolute;
+    top: 0;
+    left: -75%;
+    z-index: 2;
+    display: block;
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+    -webkit-transform: skewX(-25deg);
+    transform: skewX(-25deg);
+  }
+  .rs-image-effect-shine:hover::before {
+    -webkit-animation: img-shine 1s;
+    animation: img-shine 1s;
+  }
+  @keyframes img-shine {
+    100% {
+      left: 125%;
+    }
+  }
+  /*-------------------------
+      Fade
+  ---------------------------*/
+  @keyframes rs-fade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  /*---------------------------
+      Fade Top
+  ------------------------------*/
+  @keyframes rs-fade-top {
+    0% {
+      opacity: 0;
+      transform: translateY(-60%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  /*---------------------------
+      Fade Bottom
+  ------------------------------*/
+  @keyframes rs-fade-bottom {
+    0% {
+      opacity: 0;
+      transform: translateY(60%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  /*---------------------------
+      Fade Left
+  ------------------------------*/
+  @keyframes rs-fade-left {
+    0% {
+      opacity: 0;
+      transform: translateX(-60%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  /*---------------------------
+      Fade Right
+  ------------------------------*/
+  @keyframes rs-fade-right {
+    0% {
+      opacity: 0;
+      transform: translateX(60%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  /*------------------------------
+     Scale Up
+  --------------------------------*/
+  @keyframes rs-animation-scale-up {
+    0% {
+      opacity: 0;
+      transform: scale(0.2);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  /*---------------------------
+      Scale Down
+  ------------------------------*/
+  @keyframes rs-animation-scale-down {
+    0% {
+      opacity: 0;
+      transform: scale(1.6);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  /*---------------------------
+      Rotate
+  ------------------------------*/
+  @keyframes rs-rotate {
+    0% {
+      transform: rotate(280deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  /*---------------------------
+      Shake
+  ------------------------------*/
+  @keyframes rs-shake {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+    10% {
+      transform: translateX(-9px);
+    }
+    20% {
+      transform: translateX(8px);
+    }
+    30% {
+      transform: translateX(-7px);
+    }
+    40% {
+      transform: translateX(6px);
+    }
+    50% {
+      transform: translateX(-5px);
+    }
+    60% {
+      transform: translateX(4px);
+    }
+    70% {
+      transform: translateX(-3px);
+    }
+    80% {
+      transform: translateX(2px);
+    }
+    90% {
+      transform: translateX(-1px);
+    }
+  }
+  /*-------------------
+      Scale
+  ---------------------*/
+  @keyframes rs-scale {
+    0% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  /* -----------------------------------
+      01. General CSS
+  -------------------------------------*/
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  p {
+    margin: 0 0 26px;
+  }
+  
+  h2,
+  h4 {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #212121;
+    margin: 0 0 26px;
+    font-weight: 700;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  ::selection {
+    background: #ff3115;
+    text-shadow: none;
+    color: #ffffff;
+  }
+  .sec-spacer {
+    padding: 100px 0;
+  }
+  /*-- Readon Button Css --*/
+  /********************************/
+  /*       Slides backgrounds     */
+  /********************************/
+  /* ------------------------------------
+      02. Global Class
+  ---------------------------------------*/
+  .sec-title {
+    position: relative;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+  }
+  .sec-title h2 {
+    font-size: 30px;
+    line-height: 24px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+  .sec-title:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100px;
+    background: #ff3115;
+  }
+  .sec-title.text-right:after {
+    left: auto;
+    right: 0;
+  }
+  .sec-title p {
+    margin-bottom: 0;
+    font-size: 16px;
+  }
+  /*overly border*/
+  .mb-30 {
+    margin-bottom: 30px !important;
+  }
+  .rs-vertical-bottom {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: flex-end;
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+  }
+  /* -. Owl Carousel -*/
+  /* ------------------------------------
+      03. Header Section  
+  ---------------------------------------*/
+  /* ------------------------------------
+      02. Header Start
+  ---------------------------------------*/
+  /* ----- Menu -------*/
+  /* ------------------------------------
+      04. Sticky Menu
+  ---------------------------------------*/
+  @keyframes sticky-animation {
+    0% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  /* ------------------------------------
+      05. Slider
+  ---------------------------------------*/
+  /* ------------------------------------
+      06. Breadcrumbs
+  ---------------------------------------*/
+  /* ------------------------------------
+      07. Services
+  ---------------------------------------*/
+  /* ------------------------------------
+      07. Services
+  ---------------------------------------*/
+  /* ------------------------------------
+      34. About Us Style8
+  ---------------------------------------*/
+  /* ------------------------------------
+      08. About Us Style
+  ---------------------------------------*/
+  /* ------------------------------------
+      08. About Us
+  ---------------------------------------*/
+  .rs-about-2 .about-signature h4 {
+    margin-bottom: 0;
+    font-size: 20px;
+  }
+  .rs-about-2 .about-signature span {
+    font-size: 14px;
+  }
+  /* ------------------------------------
+      30. Course Categories
+  ---------------------------------------*/
+  /* ------------------------------------
+      09. rs courses style
+  ---------------------------------------*/
+  /* ------------------------------------
+      10. Courses Details
+  ---------------------------------------*/
+  /* ------------------------------------
+      11. Rs-counter
+  ---------------------------------------*/
+  /* ------------------------------------
+      11. OUR BEST
+  ---------------------------------------*/
+  /* ------------------------------------
+      11. Rs-counter
+  ---------------------------------------*/
+  /* ------------------------------------
+      12. Upcoming Events
+  ---------------------------------------*/
+  /* ------------------------------------
+      14. Countdown
+  ---------------------------------------*/
+  /* ------------------------------------
+      14. PUBLICATION
+  ---------------------------------------*/
+  /* ------------------------------------
+      14. Countdown
+  ---------------------------------------*/
+  /* ------------------------------------
+      13. Team Member
+  ---------------------------------------*/
+  /* ------------------------------------
+      13. Team Member
+  ---------------------------------------*/
+  /* ------------------------------------
+      13. Experienced Staffs
+  ---------------------------------------*/
+  /* ------------------------------------
+      14. Staffs Single
+  ---------------------------------------*/
+  /* ------------------------------------
+      15. Calltoaction
+  ---------------------------------------*/
+  /* ------------------------------------
+      16. Latest News
+  ---------------------------------------*/
+  /* ------------------------------------
+      17. Our Publications
+  ---------------------------------------*/
+  /* ------------------------------------
+      18. Testimonial
+  ---------------------------------------*/
+  /* ------------------------------------
+      19. Newsletter
+  ---------------------------------------*/
+  /* ------------------------------------
+      20. Rs-video
+  ---------------------------------------*/
+  /* ------------------------------------
+      21. Why Choose Us
+  ---------------------------------------*/
+  /* ------------------------------------
+      22. Pricing Table
+  ---------------------------------------*/
+  /* ------------------------------------
+      23. Instagram
+  ---------------------------------------*/
+  /* ------------------------------------
+      24. About Us Page
+  ---------------------------------------*/
+  /* ------------------------------------
+      25. Rs Timeline
+  ---------------------------------------*/
+  /* ------------------------------------
+      26. Elements
+  ---------------------------------------*/
+  /* ------------------------------------
+      27. Blog Pages
+  ---------------------------------------*/
+  /* ------------------------------------
+      28 .Blog Details 
+  ---------------------------------------*/
+  /* ------------------------------------
+      29. Shop Page Start Here 
+  ---------------------------------------*/
+  /* ------------------------------------
+      30.Shop Single Page Start Here 
+  ---------------------------------------*/
+  /*-----------------------------------
+      25. Check Out css Start Here
+  -------------------------------------*/
+  /*-----------------------------------
+      32. Shipping Area Start Here
+  ------------------------------------*/
+  /*-------------------------------------
+      32. Contact Page Section Start Here
+  --------------------------------------*/
+  /* ------------------------------------
+      33. Rs Gallery
+  ---------------------------------------*/
+  /* ------------------------------------
+      34. ScrollUp
+  ---------------------------------------*/
+  /* ------------------------------------
+      35.404 Page Area Start Here 
+  ---------------------------------------*/
+  /*-------------------------
+      36.Preloader css
+  ---------------------------*/
+  @keyframes flip {
+    0% {
+      -webkit-transform: perspective(600px) rotateY(0deg);
+      transform: perspective(600px) rotateY(0deg);
+    }
+    20% {
+      background: #ff3115;
+    }
+    29.9% {
+      background: #ff3115;
+    }
+    30% {
+      -webkit-transform: perspective(200px) rotateY(-90deg);
+      transform: perspective(200px) rotateY(-90deg);
+      background: #e41f05;
+    }
+    54.999% {
+      opacity: 1;
+    }
+    55% {
+      opacity: 0;
+    }
+    60% {
+      -webkit-transform: perspective(200px) rotateY(-180deg);
+      transform: perspective(200px) rotateY(-180deg);
+      background: #e41f05;
+    }
+    100% {
+      -webkit-transform: perspective(200px) rotateY(-180deg);
+      transform: perspective(200px) rotateY(-180deg);
+      background: #e41f05;
+    }
+  }
+  /* ------------------------------------
+      37. Rs Footer
+  ---------------------------------------*/
+  @keyframes rs-animation-scale-up {
+    0% {
+      opacity: 0;
+      transform: scale(0.2);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  /*---------------------
+      Pulse Animation
+  ---------------------*/
+  @keyframes pulse-border {
+    0% {
+      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+      opacity: 0;
+    }
+  }
+  /*------------------------------
+      Swing Animation
+  ------------------------------*/
+  @keyframes swing-anim {
+    from {
+      transform: rotate(60deg);
+      -webkit-transform: rotate(60deg);
+    }
+    to {
+      transform: rotate(-60deg);
+      -webkit-transform: rotate(-60deg);
+    }
+  }
+  @keyframes swing-anim2 {
+    from {
+      transform: rotate(40deg);
+      -webkit-transform: rotate(40deg);
+    }
+    to {
+      transform: rotate(-40deg);
+      -webkit-transform: rotate(-40deg);
+    }
+  }
+  
+  
+  
+  /* Layout: Large Devices. */
+  @media only screen and (min-width: 1600px) {
+      
+  }
+  /* Layout: Large Devices. */
+  @media only screen and (min-width: 1440px) {
+      
+  }
+  
+  /* Layout: Large Devices. */
+  @media only screen and (max-width: 1440px) {
+          
+  }
+  
+  /* Layout: Large Devices. */
+  
+  
+  /* Tablet Layout: 991px. */
+  /* Tablet Layout: 1199px. */
+  
+  /* Medium Layout: 991px. */
+  @media only screen and (max-width: 991px) {
+      .sec-spacer{
+          padding: 80px 0;
+      }
+      .rs-about-2 .about-signature{
+          padding-bottom: 50px !important;
+      }
+      .sec-title.mb-30{
+          margin-bottom: 15px !important;
+      }
+      
+      .mobile-mb-50{
+          margin-bottom: 50px;
+      }
+      .sec-title h2 {
+          font-size: 30px;
+          margin-bottom: 10px;
+      }
+  }
+  
+  /* Tablet Layout: 768px. */
+  
+  /* Min Width: 991px. */
+  
+  /* Mobile Layout: 767px. */
+  @media only screen and (max-width: 767px) {
+      .mobile-mb-50,
+      .sec-title p {
+          font-size: 14px;
+      }
+  }
+  /* Small Device : 590px. */
+  @media only screen and (max-width: 575px) {
+      
+      .rs-about-2 .sec-title h2,
+      .sec-title h2{
+          font-size: 18px;
+          margin-bottom: 4px;
+      }
+  }
+  
+  /* Small Device : 480px. */
+  
+  
+  /* Extra Small Device : 420px. */
+  
+  /* Extra Small Device : 320px. */
+  @media only screen and (max-width: 320px) {
+      
+  }
