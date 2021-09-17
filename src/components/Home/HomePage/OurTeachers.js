@@ -51,9 +51,14 @@ const OurTeachers = () => {
       <>
 
 <section className="small_pt">
+
+          <div className="heading_s1 text-center">
+            <h2>Our Faculty</h2>
+          </div>
+          <p className="text-center">If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text</p>
   <div className="container">	
     <div className="row justify-content-center">
-
+        
     {teacher.map((proj) => (
       <div className="col-lg-3 col-sm-6">
         <div className="team_box team_style1 box_shadow1 animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.01s" style={{animationDelay: '0.01s', opacity: 1}}>

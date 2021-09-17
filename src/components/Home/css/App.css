@@ -796,7 +796,7 @@ img {
 
             @media only screen and (max-width: 600px) {
               .countersmall {
-                font-size: 24px;
+                font-size: 20px;
                 }
 
               .numbersmall {
@@ -812,4 +812,15 @@ img {
               .numbersmall {
                 font-size: 44px;
                 }
+            }
+
+
+            .lookcool2{
+              box-shadow: 0 3px 6px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%);
+              border-radius:20px;
+              background-color: #344e6d;
+            }
+            .lookcool{
+              box-shadow: 0 3px 6px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%);
+              border-radius:20px;
             }

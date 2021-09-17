@@ -1,12 +1,13 @@
 import React from 'react'
 import { Link } from "react-router-dom";
+import '../css/PrincialNotice.css'
 
 const UpcomingEvents = () => {
     return (
-<section>
+<section className="remove">
   <div className="container">
-    <div className="row justify-content-center">
-      <div className="col-xl-6 col-lg-8">
+    <div style={{paddingBottom:'16px'}} className="row justify-content-center">
+      <div className="col-xl-6 col-lg-8 ">
         <div className="text-center animation" data-animation="fadeInUp" data-animation-delay="0.01s">
           <div className="heading_s1 text-center">
             <h2>Upcoming events</h2>
@@ -15,7 +16,7 @@ const UpcomingEvents = () => {
         </div>
       </div>
     </div>
-    <div className="row event_list justify-content-center">
+    <div  className="row event_list justify-content-center">
       <div className="col-lg-6">
         <div className="content_box event_box box_shadow1 animation mb-4 mb-lg-0" data-animation="fadeInUp" data-animation-delay="0.02s">
           <div className="content_img">

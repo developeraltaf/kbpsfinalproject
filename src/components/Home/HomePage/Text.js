@@ -56,7 +56,7 @@ const Text = ({ reff }) => {
         <div className="section-title text-center">
         <div className="text-center animation" data-animation="fadeInUp" data-animation-delay="0.01s">
           <div className="heading_s1 text-center">
-          <h2>Top <span> Student</span></h2>
+          <h2>Top <span>Student</span></h2>
           </div>
           <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text</p>
         </div>

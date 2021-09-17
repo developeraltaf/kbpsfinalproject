@@ -17,7 +17,7 @@ const SchoolTime = () => {
 <>
 <section style={{overflow: "hidden"}} className="countdown-section">
   <div className="container">
-    <div className="common-section">
+    <div className="common-section lookcool">
       <div className="counter-shape">
         <img src="assets/images/round-shape-2.png" alt="shape" className="round-shape-2" />
         <img src="assets/images/plus-sign.png" alt="shape" className="plus-sign item-rotate" />
