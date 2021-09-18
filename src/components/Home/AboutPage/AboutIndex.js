@@ -33,7 +33,6 @@ const AboutIndex = ({ reff }) => {
     
     return (
         <>  
-            <NoticeHeader />
             <Header />
 
             <section  className="page-title-light breadcrumb_section parallax_bg overlay_bg_50" style={{backgroundImage:'url("https://images.pexels.com/photos/1400141/pexels-photo-1400141.jpeg")', backgroundRepeat:'no-repeat',backgroundPosition: 'center',backgroundSize: 'cover',height:'80px', paddingTop:'18px'}}>
