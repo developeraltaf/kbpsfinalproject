@@ -15,7 +15,7 @@ const PrincipalNotice = () => {
       </div>
       <div style={{paddingBottom:'40px'}} className="col-lg-7 col-md-12">
         <div className="sec-title mb-30">
-          <h2>Princial Notice</h2>      
+          <h2>Principal's Message</h2>      
           <p>Fusce sem dolor, interdum in efficitur at, faucibus.</p>
         </div>
         <p className="mobile-mb-50">

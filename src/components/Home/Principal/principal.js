@@ -29,11 +29,11 @@ const principal = () => {
         <div className="col-lg-4 col-md-6">
           <div className="team_single radius_all_10 box_shadow1">
             <div className="team_img">
-              <img className="radius_ltrt_10" src="assets/images/team_img1.jpg"  alt="team_img_big" />
+              <img className="radius_ltrt_10" src="images/about2.jpg"  alt="team_img_big" />
             </div>
             <div className="team_single_info">
               <div className="team_name">
-                <h5>Aden Smith</h5>
+                <h5>Sh. Dilawar Singh</h5>
                 <span>Head Of Department</span>
               </div>
               <h6 className="mb-3">Contact info:</h6>
@@ -92,16 +92,7 @@ RZ- 219, Street no. 18 E, Sadh Nagar Palam, Colony Delhi, India 110045</address>
                 </div>
               </div>
             </div>
-            <div className="card">
-              <div className="card-header" id="heading-1-Three">
-                <h6 className="mb-0"> <Link data-toggle="collapse" to="#collapse-1-Three" aria-expanded="true" aria-controls="collapse-1-Three" style={{textDecoration:'none'}}> Field Of Special Interest</Link> </h6>
-              </div>
-              <div id="collapse-1-Three" className="collapse show" aria-labelledby="heading-1-Three">
-                <div className="card-body">
-                  <p>Chemistry Teacher</p>
-                </div>
-              </div>
-            </div>
+            
           </div>
         </div>
       </div>
