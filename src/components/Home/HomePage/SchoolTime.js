@@ -4,13 +4,19 @@ const SchoolTime = () => {
             
     const currTime=new Date().toLocaleTimeString();
     let curDate=new Date();
+    let day = curDate.toLocaleString('en-us', {weekday: 'long'});
+
     curDate=curDate.getHours();
     let Schooltime='';
     if(curDate >= 7 && curDate < 12){
        Schooltime='School Time';
     }else if(curDate >=12 && curDate < 13){
         Schooltime='Lunch Time'
-     }else{
+     }else if(day === 'Sunday' ){
+      Schooltime='Lunch Time'
+       console.log('Holiday');
+
+   }else{
         Schooltime="School Close"
      }
     return (
