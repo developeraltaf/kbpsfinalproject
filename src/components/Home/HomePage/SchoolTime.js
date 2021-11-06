@@ -10,9 +10,9 @@ const SchoolTime = () => {
     let Schooltime='';
 
 
-    if(day=='Sunday'){
+    if(day==='Sunday'){
       Schooltime='Sunday Is Holiday';
-   }else if(day=='Saturday' || curDate >=11 && curDate < 23){
+   }else if(day==='Saturday' && curDate >=11 && curDate < 23){
       Schooltime='Saturday  Close 11:00';
    }else{
       if(curDate >= 7 && curDate < 12){

@@ -118,11 +118,7 @@ Delhi 110045</address>
                                       {skills.map((data)=>(
                                            <li><Link  to={data.level}><i className={data.type} /></Link></li>
                                          ))}
-                                         
-                                    {/* <li><Link to="#"><i className="ion-social-twitter" /></Link></li>
-                                    <li><Link to="#"><i className="ion-social-googleplus" /></Link></li>
-                                    <li><Link to="#"><i className="ion-social-youtube-outline" /></Link></li>
-                                    <li><Link to="#"><i className="ion-social-instagram-outline" /></Link></li> */}
+                               
                                 </ul>
                             </div>
                         </div>

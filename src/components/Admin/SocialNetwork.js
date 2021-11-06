@@ -57,6 +57,8 @@ const SocialNetwork = ({ id, header, skil, submitValue, colorButton }) => {
                     <form>
                       <div className="row py-md-2">
                         <div className="col-md-12">
+                          <p> ion-social-facebook,<br /> ion-social-twitter,<br /> ion-social-googleplus,<br /> ion-social-youtube-outline,<br /> ion-social-instagram-outline	</p>
+                          
                           <div className="md-form mb-0">
                             <label htmlFor="title" className="">
                               Name Social Network

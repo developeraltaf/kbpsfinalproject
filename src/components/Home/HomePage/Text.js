@@ -33,10 +33,10 @@ const Text = ({ reff }) => {
     autoplayHoverPause: true,
     responsive: {
         0: {
-            items: 1,
+            items: 2,
         },
         400: {
-            items: 1,
+            items: 2,
         },
         600: {
             items: 2,
@@ -52,9 +52,9 @@ const Text = ({ reff }) => {
 };
   return (
     <>
-      <div className="container-fluid" style={{ backgroundColor: '#EFF9EE' }}>
+      <div style={{overflow:'hidden'}} className="container-fluid" style={{ backgroundColor: '#EFF9EE' }}>
         <div className="section-title text-center">
-        <div className="text-center animation" data-animation="fadeInUp" data-animation-delay="0.01s">
+        <div className="text-center animation" >
           <div className="heading_s1 text-center">
           <h2>Top <span>Student</span></h2>
           </div>
