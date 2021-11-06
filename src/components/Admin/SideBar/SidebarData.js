@@ -43,6 +43,12 @@ export const SidebarData = [
     cName: "nav-text",
   },
   {
+    title: "Social Link",
+    path: "/sociallink",
+    icon: <GoIcons.GoProject />,
+    cName: "nav-text",
+  },
+  {
     title: "Slider",
     path: "/slideradmin",
     icon: <GoIcons.GoProject />,

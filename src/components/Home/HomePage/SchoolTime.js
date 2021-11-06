@@ -8,17 +8,27 @@ const SchoolTime = () => {
 
     curDate=curDate.getHours();
     let Schooltime='';
-    if(curDate >= 7 && curDate < 12){
-       Schooltime='School Time';
-    }else if(curDate >=12 && curDate < 13){
-        Schooltime='Lunch Time'
-     }else if(day === 'Sunday' ){
-      Schooltime='Lunch Time'
-       console.log('Holiday');
 
+
+    if(day=='Sunday'){
+      Schooltime='Sunday Is Holiday';
+   }else if(day=='Saturday' || curDate >=11 && curDate < 23){
+      Schooltime='Saturday  Close 11:00';
    }else{
-        Schooltime="School Close"
-     }
+      if(curDate >= 7 && curDate < 12){
+         Schooltime='School Time';
+       
+      }else if(curDate >=12 && curDate < 13){
+          Schooltime='Lunch Time'
+       
+       }else{
+          Schooltime="School Close"
+         console.log('School Close');
+       }
+   }
+
+
+    
     return (
 <>
 <section style={{overflow: "hidden"}} className="countdown-section">

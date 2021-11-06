@@ -2,6 +2,8 @@ import loggedReducer from "./isLogged";
 import educationReducer from "./education";
 import experienceReducer from "./experience";
 import skillReducer from "./skill";
+import socialReducer from "./social";
+
 import projectReducer from "./project";
 import teacherReducer from "./teacher";
 import sliderReducer from "./slider"
@@ -13,6 +15,7 @@ const allReducers = combineReducers({
   educations: educationReducer,
   experiences: experienceReducer,
   skills: skillReducer,
+  social: socialReducer,
   projects: projectReducer,
   homeslider: sliderReducer,
   teacher:teacherReducer,

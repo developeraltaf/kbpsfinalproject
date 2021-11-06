@@ -1,7 +1,15 @@
-import React from 'react'
+import React, { useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { getSkillsz } from "../../../actions/socialNetwork";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+    const skills = useSelector((state) => state.social);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getSkillsz());
+  }, [dispatch]);
     return (
         <>
 
@@ -107,11 +115,14 @@ Delhi 110045</address>
                                 </div>
                                 <h6 className="widget_title">Follow Us</h6>
                                 <ul className="list_none social_icons social_white social_style1">
-                                    <li><Link to="#"><i className="ion-social-facebook" /></Link></li>
-                                    <li><Link to="#"><i className="ion-social-twitter" /></Link></li>
+                                      {skills.map((data)=>(
+                                           <li><Link  to={data.level}><i className={data.type} /></Link></li>
+                                         ))}
+                                         
+                                    {/* <li><Link to="#"><i className="ion-social-twitter" /></Link></li>
                                     <li><Link to="#"><i className="ion-social-googleplus" /></Link></li>
                                     <li><Link to="#"><i className="ion-social-youtube-outline" /></Link></li>
-                                    <li><Link to="#"><i className="ion-social-instagram-outline" /></Link></li>
+                                    <li><Link to="#"><i className="ion-social-instagram-outline" /></Link></li> */}
                                 </ul>
                             </div>
                         </div>

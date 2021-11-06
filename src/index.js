@@ -14,6 +14,8 @@ import { getprojects } from "./actions/projectAction";
 import {getprojecthomeslider} from "./actions/sliderAction"
 import {getprojectss} from "./actions/teacherAction"
 import { getSkills } from "./actions/skillAction";
+import { getSkillsz } from "./actions/socialNetwork";
+
 import {getprojectsabout} from "./actions/aboutAction"
 import api from "./apis/serverApi";
 
@@ -25,6 +27,8 @@ store.dispatch(getExperiences());
 store.dispatch(getprojects());
 store.dispatch(getprojectss());
 store.dispatch(getSkills());
+store.dispatch(getSkillsz());
+
 store.dispatch(getprojecthomeslider());
 store.dispatch(getprojectsabout());
 
